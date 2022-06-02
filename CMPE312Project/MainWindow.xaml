@@ -1,0 +1,38 @@
+﻿<Window x:Class="CMPE312Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CMPE312Project"
+        mc:Ignorable="d"
+       Title="Customer Registery" Height="470" Width="1230" Style="{StaticResource WindowStyle}"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle HorizontalAlignment="Left" Height="286" Margin="29,72,0,0" Stroke="Teal" VerticalAlignment="Top" Width="305"/>
+        <Button Content="Add Customer" HorizontalAlignment="Left" Margin="379,73,0,0" VerticalAlignment="Top" Click="Button_Click" Height="48" Width="108"/>
+        <Button x:Name="deleteCustomer" Content="Delete Customer" HorizontalAlignment="Left" Margin="379,146,0,0" VerticalAlignment="Top" Height="48" Width="108" Click="deleteCustomer_Click"/>
+        <Button Content="Update Customer" HorizontalAlignment="Left" Margin="379,228,0,0" VerticalAlignment="Top" Height="48" Width="108" Click="Button_Click_2"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="1170,389,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button x:Name="findbutton" Content="Find a Customer" HorizontalAlignment="Left" Margin="379,308,0,0" VerticalAlignment="Top" Height="50" Width="108" Click="findbutton_Click"/>
+        <Label Content="Customer Registery" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code SemiBold" FontSize="30"/>
+        <Label Content="PNumber:" HorizontalAlignment="Left" Margin="37,88,0,0" VerticalAlignment="Top" Height="27" Width="80"/>
+        <TextBox x:Name="pNumber" HorizontalAlignment="Left" Margin="152,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" PreviewTextInput="onlynumbers"/>
+        <Label Content="Name Surname:" HorizontalAlignment="Left" Margin="37,130,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Margin="152,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" IsEnabled="False" Height="22"/>
+        <Label Content="Address:" HorizontalAlignment="Left" Margin="37,177,0,0" VerticalAlignment="Top" Height="27" Width="111"/>
+        <TextBox x:Name="address" HorizontalAlignment="Left" Margin="152,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="46" IsEnabled="False"/>
+        <Label Content="Date of Birth:" HorizontalAlignment="Left" Margin="37,298,0,0" VerticalAlignment="Top" Height="26" Width="92"/>
+        <Button x:Name="clear" Content="Clear" HorizontalAlignment="Left" Margin="415,389,0,0" VerticalAlignment="Top" Width="42" Click="clear_Click"/>
+        <Label Content="Gender:" HorizontalAlignment="Left" Margin="37,250,0,0" VerticalAlignment="Top" Height="26" Width="110"/>
+        <TextBox x:Name="gender" HorizontalAlignment="Left" Margin="152,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" IsEnabled="False" Height="22"/>
+        <ListBox x:Name="listbox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="535,72,50,76"/>
+        <RadioButton Content="Light Mode" HorizontalAlignment="Left" Margin="1057,379,0,0" VerticalAlignment="Top"  Checked="LightMode_Checked"/>
+        <RadioButton Content="Dark Mode" HorizontalAlignment="Left" Margin="1057,399,0,0" VerticalAlignment="Top" IsChecked="True" Checked="DarkMode_Checked"/>
+        <TextBox x:Name="date" HorizontalAlignment="Left" Margin="152,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" IsEnabled="False" Height="22"/>
+
+
+    </Grid>
+</Window>

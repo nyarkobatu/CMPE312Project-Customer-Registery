@@ -1,0 +1,24 @@
+﻿<Window x:Class="CMPE312Project.AddProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CMPE312Project"
+        mc:Ignorable="d"
+        Title="AddProduct" Height="550" Width="310" Style="{StaticResource WindowStyle}"
+        ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Phone Number:" HorizontalAlignment="Left" Margin="34,36,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="pNumber" HorizontalAlignment="Left" Margin="150,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.IsRowHeader="True" PreviewTextInput="onlynumbers"/>
+        <Label Content="Name Surname:" HorizontalAlignment="Left" Margin="34,77,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Margin="150,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Address:" HorizontalAlignment="Left" Margin="34,122,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="address" HorizontalAlignment="Left" Margin="150,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="65"/>
+        <Label Content="Gender:" HorizontalAlignment="Left" Margin="34,223,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="gender" HorizontalAlignment="Left" Margin="150,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Date of Birth:" HorizontalAlignment="Left" Margin="34,267,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="date" HorizontalAlignment="Left" Margin="150,267,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
+        <Button x:Name="addcustomer" Content="Add Customer" HorizontalAlignment="Left" Margin="31,426,0,0" VerticalAlignment="Top" Height="54" Width="83" Click="addcustomer_Click"/>
+        <Button x:Name="close" Content="Close" HorizontalAlignment="Left" Margin="187,426,0,0" VerticalAlignment="Top" Height="54" Width="83" Click="Button_Click"/>
+    </Grid>
+</Window>

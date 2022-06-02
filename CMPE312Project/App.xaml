@@ -1,0 +1,168 @@
+﻿<Application x:Class="CMPE312Project.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CMPE312Project"
+             xmlns:properties="clr-namespace:CMPE312Project.Properties"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+
+        <Style TargetType="{x:Type RadioButton}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Dark">
+                    <Setter Property="Foreground" Value="Teal"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Light">
+                    <Setter Property="Foreground" Value="Teal"/>
+                </DataTrigger>
+
+
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="{x:Type Label}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Dark">
+                    <Setter Property="Foreground" Value="Teal"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Light">
+                    <Setter Property="Foreground" Value="Teal"/>
+                </DataTrigger>
+
+
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="{x:Type Rectangle}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Dark">
+                    <Setter Property="Stroke" Value="Teal"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Light">
+                    <Setter Property="Stroke" Value="Teal"/>
+                </DataTrigger>
+
+
+            </Style.Triggers>
+        </Style>
+
+
+        <Style TargetType="{x:Type TextBox}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Dark">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Teal"/>
+                    <Setter Property="Foreground" Value="Teal"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Light">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Teal"/>
+                    <Setter Property="Foreground" Value="Teal"/>
+                </DataTrigger>
+
+
+            </Style.Triggers>
+        </Style>
+
+
+        <Style TargetType="{x:Type ListBox}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Dark">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Teal"/>
+                    <Setter Property="Foreground" Value="Teal"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Light">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Teal"/>
+                    <Setter Property="Foreground" Value="Teal"/>
+                </DataTrigger>
+
+
+            </Style.Triggers>
+        </Style>
+
+
+        <Style TargetType="{x:Type Window}" x:Key="WindowStyle">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Dark">
+                    <Setter Property="Background" Value="#1f1f1f"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Light">
+                    <Setter Property="Background" Value="LightGray"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                </DataTrigger>
+
+
+            </Style.Triggers>
+        </Style>
+
+
+
+        <Style TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Dark">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="LightGray"/>
+                    <Setter Property="Foreground" Value="Teal"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Light">
+                    <Setter Property="Background" Value="Teal"/>
+                    <Setter Property="BorderBrush" Value="Teal"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </DataTrigger>
+
+
+            </Style.Triggers>
+        </Style>
+
+
+        <Style TargetType="{x:Type DatePicker}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Dark">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Teal"/>
+                    <Setter Property="Foreground" Value="Teal"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Light">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Teal"/>
+                    <Setter Property="Foreground" Value="Teal"/>
+                </DataTrigger>
+
+
+            </Style.Triggers>
+        </Style>
+
+
+        <Style TargetType="{x:Type DatePickerTextBox}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Dark">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Teal"/>
+                    <Setter Property="Foreground" Value="Teal"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=CustomerInfo}" Value="Light">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Teal"/>
+                    <Setter Property="Foreground" Value="Teal"/>
+                </DataTrigger>
+
+
+            </Style.Triggers>
+        </Style>
+
+
+
+    </Application.Resources>
+</Application>
